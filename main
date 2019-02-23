@@ -1,2 +1,20 @@
 这次安装miniConda，是anaconda的精简版，只有python和少量的包。其中miniconda3安装是python3，miniconda2安装的是python2（具体版本看官网），
 但是conda厉害的地方在于可以创建多个虚拟环境，也就是在miniconda3上也可以安装python2（可以具体到小版本python2.X）。
+下载：选择自己系统合适的版本安装，下载地址https://conda.io/en/latest/miniconda.html
+安装：bash Miniconda3-latest-Linux-x86_64.sh
+添加清华源：
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+#msys2
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+#bioconda
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+#menpo
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
+#pytorch
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+
+# for legacy win-64
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/peterjc123/
