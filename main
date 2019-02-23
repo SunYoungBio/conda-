@@ -18,3 +18,6 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 
 # for legacy win-64
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/peterjc123/
+创建虚拟环境：conda create --name py2 python=2
+进入虚拟环境：source activate py2
+返回默认环境：conda activate
